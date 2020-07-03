@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".TwoDice">
+
+    <ImageView
+        android:id="@+id/diceImageView2"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/two_dice"/>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp">
+        <ImageView
+            android:id="@+id/diceImg1"
+            android:layout_width="160dp"
+            android:layout_height="270dp"/>
+        <ImageView
+            android:id="@+id/diceImg2"
+            android:layout_width="160dp"
+            android:layout_height="270dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to roll"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="60dp"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_light"/>
+    <Button
+        android:id="@+id/btnOneDice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="One Dice"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_orange_dark"/>
+</RelativeLayout>
